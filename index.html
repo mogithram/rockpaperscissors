@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Game: Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .result-message {
+        font-size: 1.5rem;
+        min-height: 2rem;
+        color: rgb(0, 229, 255);
+        text-shadow: 0 0 10px rgba(27, 215, 215, 0.7);
+        opacity: 1;  /* Fully visible */
+    }
+</style>
+<body>
+    <div id="start-screen" class="start-screen">
+        <div class="start-content">
+            <h1>Rock Paper Scissors</h1>
+            <p>First to 10 wins!</p>
+            <button id="start-btn" class="start-btn">Start Game</button>
+        </div>
+    </div>
+    <div class="game-container">
+        <div class="player-section">
+            <div class="score" id="player-score">0</div>
+            <div class="hand-display" id="player-hand">
+                <div class="hand-image"></div>
+            </div>
+            <h2>Your Hand</h2>
+        </div>
+
+        <div class="vs-text">VS</div>
+        
+        <div class="player-section">
+            <div class="score" id="computer-score">0</div>
+            <div class="hand-display" id="computer-hand">
+                <div class="hand-image"></div>
+            </div>
+            <h2>Computer</h2>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="choice-btn" data-choice="rock">✊</button>
+        <button class="choice-btn" data-choice="paper">✋</button>
+        <button class="choice-btn" data-choice="scissors">✌️</button>
+    </div>
+
+    <div id="result-message"></div>
+    
+    <script type="module" src="config.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
